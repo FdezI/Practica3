@@ -154,7 +154,7 @@ Por lo tanto, se puede decir, que tras el resultado de las pruebas, **vmware es 
 ## Instalación del servicio
 El servicio del ejemplo, un servidor de Minecraft, corre bajo una máquina virtual de java por lo que deberemos instalar una y, aunque la versión libre **openjdk** proporciene todo lo necesario, su rendimiento es algo menor a la máquina ofrecida por oracle, la cual podremos instalar sin problema legal alguno para nuestro propósito, más en concreto, su versión 7.
 
- **[-- ir a tutorial --](https://github.com/FdezI/Practica3/blob/master/minecraft_server.md#instaci%C3%B3n-del-servicio)**
+ **[-- ir a tutorial de instalación--](https://github.com/FdezI/Practica3/blob/master/minecraft_server.md)**
 
 ------------
 
@@ -196,7 +196,7 @@ Aunque en un inicio el jugador únicamente consume ~59MB de memoria, curiosament
 
 
 ### Pruebas de rendimiento con jconsole (Java)
-#### [Preparación del proceso para ser monitorizado](https://github.com/FdezI/Practica3/blob/master/jconsole.md#usando-jconsole)
+[**-- Ir a tutorial de conexión --**](https://github.com/FdezI/Practica3/blob/master/jconsole.md)
 
 
 #### Pruebas por monitorización
