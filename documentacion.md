@@ -110,7 +110,7 @@ Para realizar el conjunto de pruebas haremos uso de la herramienta **sysbench** 
 ### 2. Compatibilizando la imagen
 Deberemos convertir la imagen de disco al formato compatible con vmware (vmdk) usaremos “qemu-img”, de esta forma usaremos el mismo sistema “guest” en las distintos sitemas de virtualización (ahorrándonos la instalación repetida del sistema operativo).
 
-    $ qemu-img convert -f raw -O vmdk /vms/storage/serverbase.img /vms/storage/serverbase.vmdk
+    $ qemu-img convert -f raw -O vmdk /vms/storage/kvmGM.img /vms/storage/kvmGM.vmdk
     
 * Este comando nos realizará una copia convertida al nuevo formato, vmdk de la imagen.
 
@@ -274,7 +274,9 @@ Si se quiere optimizar la seguridad de acceso y limitar al usuario que gestione 
 
 #### Otras consideraciones
 * Para reducir el tamaño de la imagen base, en caso de que el sistema no haga sparse, es posible convertir la imagen a qcow2 o vmdk:
-        # qemu-img convert -f raw -O qcow2 serverbase.img serverbase.qcow2
 
+		# qemu-img convert -f raw -O qcow2 serverbase.img serverbase.qcow2
+
+* A la hora de realizar las pruebas puede venir bien el uso del misma imagen, por lo que el formato adecuado de la imagen (a pesar de usarse la raw en la documentación) sería el **vmdk** por ser el compatible con ambos hipervisores.
 * Lo ideal para la máquina virtual (y máquinas virtuales en general), es tenerlas bajo un sistema operativo sin entorno de escritorio ninguno y gestionarlas todas remotamente desde algún PC con acceso a todas las máquinas virtuales administradas. Para máquinas kvm, tanto **virsh** como **virt-manager** proporcionan dicha opción y vmware seguramente también lo haga. Además, puede configurarse la salida "serie" del sistema operativo por lo que se puede visualizar desde el momento de carga del grub.
-* VMWare pertenece a una empresa privada, mientras que KVM se encuentra bajo licencia GPL y, en teoría, debería proporcionar un mejor rendimiento que vmware por lo que aún con los fallos obtenidos sería conveniente encontrar una solución al problema con el que se ha lidiado en esta práctica. 
+* VMWare pertenece a una empresa privada, mientras que KVM se encuentra bajo licencia **GPL** y, en teoría, debería proporcionar un mejor rendimiento que vmware por lo que aún con los fallos obtenidos sería conveniente encontrar una solución al problema con el que se ha lidiado en esta práctica. 
