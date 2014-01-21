@@ -1,3 +1,6 @@
+## Instación del servicio
+El servicio del ejemplo, un servidor de Minecraft, corre bajo una máquina virtual de java por lo que deberemos instalar una y, aunque la versión libre **openjdk** proporciene todo lo necesario, su rendimiento es algo menor a la máquina ofrecida por oracle, la cual podremos instalar sin problema legal alguno para nuestro propósito, más en concreto, su versión 7.
+
 ### 1. Instalando java
 
 #### JRE de Oracle
