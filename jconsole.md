@@ -1,4 +1,4 @@
-#### Preparación del proceso para ser monitorizado
+#### Usando jconsole
 
 
 1. Lo primero será modificar el fichero **/etc/msm.conf** para añadir las líneas necesarias a la línea de ejecución de java para poder conectarnos remotamente con el monitor. Localizamos el parámetro de configuración **DEFAULT_INVOCATION**, dejándolo:
