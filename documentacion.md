@@ -203,7 +203,7 @@ El servicio del ejemplo, un servidor de Minecraft, corre bajo una máquina virtu
 ------------
 
 
-## Analizando prestacion del servicio
+## Analizando prestaciones del servicio
 
 Para hacer las pruebas, una vez iniciado el servidor, aunque sea una vez, necesitaremos conectarnos sin cuentas autenticadas oficialmente así que modificamos la opción online-mode de server.properties y la ponemos a false. 
 
@@ -259,7 +259,8 @@ Aunque en un inicio el jugador únicamente consume ~59MB de memoria, curiosament
 		[guest]# msm MCServer1 start
 
 3. Desde una máquina remota con acceso a nuestra máquina virtual ejecutaremos:
-	$ jconsole 192.168.100.1:9003
+
+		$ jconsole 192.168.100.1:9003
 
 	* En caso de no poder acceder por culpa de un firewall o similar, siempre podemos realizar un túnel ssh: `$ ssh -L 9003:localhost:9003 minecraft@192.168.100.1` y conectarnos mediante `$ jconsole localhost:9003`
 
