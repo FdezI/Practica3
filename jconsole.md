@@ -20,3 +20,5 @@
 		$ jconsole 192.168.100.1:9003
 
 	* En caso de no poder acceder por culpa de un firewall o similar, siempre podemos realizar un túnel ssh: `$ ssh -L 9003:localhost:9003 minecraft@192.168.100.1` y conectarnos mediante `$ jconsole localhost:9003`
+
+[**-- Volver a documentación --**](https://github.com/FdezI/Practica3/blob/master/documentacion.md#pruebas-por-monitorizaci%C3%B3n)
