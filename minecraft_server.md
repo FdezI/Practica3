@@ -47,4 +47,4 @@ El servicio del ejemplo, un servidor de Minecraft, corre bajo una máquina virtu
 			
 	* De esta forma se crearán todos los ficheros de configuración necesarios y actualizará alguno ya creado anteriormente por msm.
 
-[-- Volver a documentación --](https://github.com/FdezI/Practica3/edit/master/documentacion.md#instalaci%C3%B3n-del-servicio)
+[**-- Volver a documentación --**](https://github.com/FdezI/Practica3/edit/master/documentacion.md#instalaci%C3%B3n-del-servicio)
